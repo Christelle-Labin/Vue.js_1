@@ -1,0 +1,39 @@
+/* Import du fichier contenant le code CSS reset */
+@import './base.css';
+
+:root {
+  --bgc-main: rgb(204, 229, 237);
+  --bgc-card: rgb(244, 246, 247);
+  --box-sdw: 0px 0px 7px rgb(114, 114, 193);
+  --title: rgb(31, 143, 184);
+  --clr-p: rgb(9, 77, 101);
+  --clr-span: grey;
+  --bgc-badge: darkred;
+  --neutral-clr: white;
+}
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: var(--title);
+}
+h2 {
+  color: var(--title);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* RWD */
+@media (max-width: 1098px) {
+  h1 {
+    font-size: 38px;
+  }
+}
